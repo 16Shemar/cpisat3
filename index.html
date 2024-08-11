@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Hardware Store</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#items">Items</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li class="cart"><a href="#cart">Cart <span id="cart-count">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Welcome to Our Online Hardware Store</h1>
+            <div class="search-container">
+                <input type="text" id="search" placeholder="Search for components...">
+                <div class="dropdown">
+                    <p>Processor</p>
+                    <p>Motherboard</p>
+                    <p>Graphics Card</p>
+                    <p>RAM</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We offer the best hardware components for your computer needs.</p>
+        </section>
+
+        <section id="items">
+            <h2>Our Products</h2>
+            <div class="product-list">
+                <div class="product">
+                    <img src="path_to_image/processor.jpg" alt="Processor">
+                    <p>Processor - R3000</p>
+                    <button class="btn" onclick="addToCart('Processor', 3000)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="path_to_image/motherboard.jpg" alt="Motherboard">
+                    <p>Motherboard - R2500</p>
+                    <button class="btn" onclick="addToCart('Motherboard', 2500)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="ram.jpg" alt="RAM">
+                    <p>RAM - R1500</p>
+                    <button class="btn" onclick="addToCart('Ram', 1500)">Add to Cart</button>
+                </div>
+            </div>
+
+        </section>
+        <!-- Add more products similarly -->
+        </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: contact@hardwarestore.com</p>
+            <p>Phone: 012 345 6789</p>
+        </section>
+
+        <section id="cart">
+            <h2>Your Cart</h2>
+            <div id="cart-items">
+                <p>Your cart is empty.</p>
+            </div>
+            <p>Total: R<span id="cart-total">0</span></p>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Online Hardware Store. All rights reserved.</p>
+    </footer>
+
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
